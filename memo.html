@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Bible R</title>
+        <link rel="stylesheet" href="style.css">
+
+				<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <script src="common.js"></script>
+
+    </head>
+    <body>
+
+        <div class="head">
+            <div class="container">
+							<div class="hidden-xs visble-sm visble-md">
+
+								<!--드롭다운 추가-->
+								<!-- <div class="btn-group">
+								  <button type="button" class="btn btn-danger">My menu</button>
+								  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								    <span class="caret"></span>
+								    <span class="sr-only">Toggle Dropdown</span>
+								  </button>
+								<ul class="dropdown-menu" role="menu">
+								    <li><a href="#">Action</a></li>
+								    <li><a href="#">Another action</a></li>
+								    <li><a href="#">Something else here</a></li>
+								    <li class="divider"></li>
+								    <li><a href="#">Separated link</a></li>
+								  </ul>
+								</div> -->
+								<ul>
+                    <a href="/">
+                        <li>Login</li>
+                    </a>
+                    <a href="/">
+                        <li>Member</li>
+                    </a>
+                </ul>
+							  </div>
+                <div class="row">
+                    <h2>Bible Recite</h2>
+                </div>
+						</div>
+					</div>
+        </div>
+				<!--성경 검색입력란-->
+			  <div class="container">
+						<div class="row">
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default">검색</button>
+							</form>
+						  </div>
+						</div>
+
+					<!--본문-->
+			  <div class="container">
+            <div class="row">
+							<div class="col-xs-4 col-md-4 col-md-4">
+							<div class="bible_1"></div>
+							</div>
+							<div class="col-xs-4 col-md-4 col-md-4">
+							<div class="bible_2">
+								<center><object type="text/html" data=
+								"http://ibibles.net/quote.php?kor-mat/5:3-12"
+								 width="370" height="550"></object></center>
+							 </div>
+							</div>
+							<div class="col-xs-4 col-md-4 col-md-4">
+							<div class="bible_3"></div>
+							</div>
+						</div>
+        </div>
+
+        <!--버튼클릭-->
+        <div class="container">
+            <div class="row">
+							 <form class="" action="index.html" method="post">
+                  <div class="bottom" style="text-align :center ; ">
+                      <button class="btn_1"  type="button" name="button" style="color: #fff">암송하기</button>
+											<button class="btn_1"  type="button" name="button" style="color: #fff">결과확인</button>
+                  </div>
+							 </form>
+            </div>
+        </div>
+
+				<!--스크립트부분 추후에 분리-->
+				<script type="text/javascript">
+				$(function(){
+				  $('.btn_1').click(function(){
+				    $('.bible_2').hide();
+				  });
+				});
+				</script>
+
+
+    </body>
+</html>

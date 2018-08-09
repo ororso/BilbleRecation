@@ -1,0 +1,28 @@
+body{margin: 0;padding: 0;top : 0; overflow-x: hidden; background-color: #EAEAEA}
+h1{margin:0;}
+
+.container{background-color: #EAEAEA}
+
+/*검색바*/
+.btn{height: 35px !important}
+.container .row .navbar-form{margin-left: 40%;}
+
+/*헤더부분*/
+.container ul li {color: black}
+
+.row h2 {color: #998A00}
+.head .row h2{text-align: center;}
+
+.head ul {display: inline-block;margin: 0;padding: 0 ;float: right; }
+.head ul li{float: left; list-style: none;padding: 0px 10px;}
+
+/*본문*/
+.container .row .bible_1 , .bible_2, .bible_3{float: left;}
+.bible_1{height: 500px; }
+.bible_2{height: 500px; }
+.bible_3{height: 500px; }
+
+
+/*바텀 */
+button {height: 50px; background: #997000 ;}
+.btn_1{margin-top: 65px; padding: 0px 30px;margin-left: 20px;}
